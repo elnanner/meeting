@@ -1,10 +1,10 @@
 ##Instructions
 Instructions to test 
 
-Para la resolucion se utilizó:
--BACKEND -> .net core 3.1
--FRONTEND -> Angular 9.1.13
--PERSISTENCIA -> Sql server 2017 Developer Edition
+*Para la resolucion se utilizó:
+	*-BACKEND -> .net core 3.1
+	*-FRONTEND -> Angular 9.1.13
+	*-PERSISTENCIA -> Sql server 2017 Developer Edition
 
 Al iniciar la solucion, hacer un restore package.
 Elegir Challenge.API como proyecto de inicio.
@@ -25,15 +25,21 @@ Se trato de hacer una app lo mas desacoplada posible.
 Como mejoras le falta autenticacion mas real, logging, cache, healthcheck, hateoas. 
 
 
-DATOS DE PRUEBA para los usuarios.
-usuarios "admin" 
-	matsuoluciano@gmail.com 	luciano1
-	admin1@gmail.com		admin123
+DATOS DE PRUEBA para los usuarios
+---------------------------------
+*usuarios "admin" 
 
-usuarios "user"
-	user0@gmail.com			user1234
-	--van del 0 al 6--
-	user6@gmail.com			user1234
+	*matsuoluciano@gmail.com 	luciano1
+	
+	*admin1@gmail.com		admin123
+
+*usuarios "user"
+
+	*user0@gmail.com			user1234
+	
+	*--van del 0 al 6--
+	
+	*user6@gmail.com			user1234
 
 ***IMPORTANTE***
 En caso de modificar desde el backend la app url(usa SSL), hay que modificar el archivo environment.ts(propiedad restServiceUrl) para que los servicios que utiliza angular, puedan pegarle al backend.
