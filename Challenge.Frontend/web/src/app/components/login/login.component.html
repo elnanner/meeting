@@ -1,0 +1,15 @@
+<div class="container" *ngIf="!authService.isAuthenticated">
+  <form  [formGroup]="form">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Username (es un correo electrónico)</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formnovalidate formControlName="username">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" formnovalidate formControlName="password">
+    </div>
+    <span class="text-danger" *ngIf="errors">Username/Password incorrect.</span>
+    <br />
+    <button type="submit" class="btn btn-primary" (click)="login()" [disabled]="!form.valid">Submit</button>
+  </form>
+</div>

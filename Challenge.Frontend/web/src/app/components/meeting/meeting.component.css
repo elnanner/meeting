@@ -1,0 +1,18 @@
+#meeting-list {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#btn-create{
+    margin: 20px;
+}
+
+.my-icon{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.my-icon:hover{
+    cursor:pointer;
+}
+

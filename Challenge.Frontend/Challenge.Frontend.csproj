@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="web\src\app\components\app.routes.ts" />
+    <None Remove="web\src\app\interceptors\token.interceptor.ts" />
+    <None Remove="web\src\app\models\api-response.model.ts" />
+    <None Remove="web\src\app\models\city.model.ts" />
+    <None Remove="web\src\app\models\meeting.model.ts" />
+    <None Remove="web\src\app\models\metadata.model.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="web\src\app\app.routes.ts" />
+    <TypeScriptCompile Include="web\src\app\interceptors\token.interceptor.ts" />
+    <TypeScriptCompile Include="web\src\app\models\api-response.model.ts" />
+    <TypeScriptCompile Include="web\src\app\models\city.model.ts" />
+    <TypeScriptCompile Include="web\src\app\models\meeting.model.ts" />
+    <TypeScriptCompile Include="web\src\app\models\metadata.model.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+</Project>
