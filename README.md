@@ -10,12 +10,17 @@ Al iniciar la solucion, hacer un restore package.
 Elegir Challenge.API como proyecto de inicio.
 
 Para correr el proyecto CHallenge.Frontend es necesario  en necesario hacer un "npm install" para instalar dependencias.
-Para ello, situarse en la carpeta web, click derecho y hacer un copy, esto nos copia el path de la carpeta. Accedemos a ella desde CMD y corremos el comando anteriormente mencionado(siempre desde /web).
-Otra alternatica es boton derecho sobre web, "open folder in file explorer" que nos abre el explorador de archivos, y sobre la ruta que nos muesta el explorador ponemos "CMD o powershell, lo que usemos", esto nos abre la consola en la ruta especificada ;).
+Para ello, situarse en la carpeta web, click derecho y hacer un copy, esto nos copia el path de la carpeta. Accedemos a 
+ella desde CMD y corremos el comando anteriormente mencionado(siempre desde /web).
+Otra alternatica es boton derecho sobre web, "open folder in file explorer" que nos abre el explorador de archivos, y sobre
+la ruta que nos muesta el explorador ponemos "CMD o powershell, lo que usemos", esto nos abre la consola en la ruta especificada ;).
 Para levantar el front hecho en angular, hay que correr el comando "ng serve". 
-El frontend si bien es solo a modo demostrativo, contempla el tipo de rol y en base a eso muestra un boton create en la parte de meetings. Tiene un funcionamiento basico, maneja jwt y hace uso de servicios rest para peticionar al backend.
+El frontend si bien es solo a modo demostrativo, contempla el tipo de rol y en base a eso muestra un boton create en la 
+parte de meetings. Tiene un funcionamiento basico, maneja jwt y hace uso de servicios rest para peticionar al backend.
 
-Para Sqlserver se subieron varios archivos, se recomienda generar una base de datos llamada "Meetup" y correr el script "CreationWithData.sql" que tiene datos insertados. Asimismo hay un backup de la base de datos en un archivo.bkp que s e puede utilzar para restaurar la base.
+Para Sqlserver se subieron varios archivos,todos dentro del proyecto ***Challenge.Infrastructure/Data***. Se recomienda generar una base de datos llamada "Meetup" y 
+correr el script "CreationWithData.sql" que tiene datos insertados. Asimismo hay un backup de la base de datos en un archivo.bkp
+que se puede utilzar para restaurar la base.
 
 Algunas funcionalidades no se hicieron, sobre todo algunos crud de city y user por motivos de tiempo.
 Dejé muchos comentarios(abusé un poco) de forma que se pueda entender lo que pensé en ese momento del desarrollo.
