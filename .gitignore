@@ -231,12 +231,6 @@ _Pvt_Extensions
 .fake/
 
 
-# ignore appsettings configuration files
-**/appsettings.development.json
-**/appsettings.staging.json
-**/appsettings.production.json
-**/appsettings.json
-
 /Challenge.API/obj/
 /Challenge.Core/obj/
 /Challenge.Infrastructure/obj/
